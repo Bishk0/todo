@@ -16,7 +16,7 @@ data-image="../assets/img/sidebar-1.jpg"
 </div>
 <div class="sidebar-wrapper">
   <ul class="nav">
-    <li class="nav-item" *ngFor="let category of categories">
+    <li class="nav-item" *ngFor="let category of categories" (click)="showTasksByCategory(category)">
       <a class="nav-link">
         <p>{{category.title}}</p>
       </a>
